@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <!-- menu  -->
+    <header class="header" id="header">
+        <div class="main-menu container-custom d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">HOME </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mission & Vision</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="login">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item mx-2"><a class="nav-link btn btn-success text-white" href="#">
+                                Registration</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link btn btn-danger text-white" href="#">Login</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- response menu  -->
+            <div class="res-menu " id="menuBtn">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>MENU</span>
+            </div>
+        </div>
+        <div class="res-menu-tow" id="menuRes">
+            <nav class="navbar ">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mission & Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+
+                    <div class="d-flex justify-content-between">
+                        <li class="nav-item mx-2"><a class="nav-link btn btn-success text-white" href="#">
+                                Registration</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link btn btn-danger text-white" href="#">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- menu end -->
+    <section class="container-custom ">
+        <div class="visitor_from py-5 my-5" style="background-color: #082744;">
+            <div class="section-title col-12">
+                <h2 class="text-light text-center">VISITOR REGISTRATION FORM</h2>
+            </div>
+            <form action="https://www.e-healthbd.com/register" method="post" enctype="multipart/form-data"
+                class="php-email-form px-4">
+                <input type="hidden" name="_token" value="yZdw2YpEkg7CdRsuwd3m2ydBRhNgDt60pJX9R8HB">
+                <div class="row text-light card-body">
+                    <div class=" col-lg-6 col-12 p-2">
+                        <label for="visitor_name" class="form-label">Name:<samp class="text-danger">*</samp></label>
+                        <input type="text" class="form-control" name="visitor_name" id="visitor_name"
+                            placeholder="Your Name" required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label class="col-sm-4 control-label" for="visitor_gender">Gender</label>
+                        <div class="col-sm-6">
+                            <label class="radio-inline" for="male">
+                                <input type="radio" name="visitor_gender" id="male" value="male" checked="">
+                                Male</label>
+                            <label class="radio-inline" for="female">
+                                <input type="radio" name="visitor_gender" id="female" value="female">
+                                Female</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="visitor_mobile" class="form-label">Mobile No:<samp
+                                class="text-danger">*</samp></label>
+                        <input type="number" step="1" min="1" class="form-control" name="visitor_email" id="my-input"
+                            placeholder="Mobile No" required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="password" class="form-label">Password:<samp class="text-danger">*</samp></label>
+                        <input type="password" id="password" class="form-control" name="password"
+                            placeholder="Enter Password" required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="confirm_password" class="form-label">Confirm Password:<samp
+                                class="text-danger">*</samp></label>
+                        <input type="password" id="confirm_password" class="form-control" name="password_confirmation"
+                            placeholder="Confirm Password" required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="visitor_address" class="form-label">Address:<samp
+                                class="text-danger">*</samp></label>
+                        <input type="text" class="form-control" name="visitor_address" id="visitor_address"
+                            placeholder="Address" required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="dob" class="form-label">Date Of Birth:<samp class="text-danger">*</samp></label>
+                        <input type="date" class="form-control datepicker" name="dob" id="dob" placeholder="dd-mm-yyyy"
+                            required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="occupation" class="form-label">Occupation:</label>
+                        <input type="text" class="form-control" name="occupation" id="occupation"
+                            placeholder="Occupation" required="">
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="blood_group" class="form-label">Blood Group<samp
+                                class="text-danger">*</samp></label>
+                        <select name="blood_group" class="form-control" id="blood_group" required="">
+                            <option value="">------Select------</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="A-">A-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-12 p-2">
+                        <label for="last_donate_date" class="form-label">Last Donate Date:</label>
+                        <input type="date" class="form-control datepicker" name="last_donate_date" id="last_donate_date"
+                            placeholder="dd-mm-yyyy" required="">
+                    </div>
+                    <div class="col-lg-12 col-12 p-4 text-center">
+                        <div class="d-grid col-6 mx-auto mt-3">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="bg-dark text-white py-2 mb-0">
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-10">
+                    <ul class="list-unstyled d-flex">
+                        <li class="mx-2"><a class="text-white" href="#">Terms of Use</a></li>
+                        <li class="mx-2"><a class="text-white" href="#">Privacy Policy</a></li>
+                        <li class="mx-2"><a class="text-white" href="#">Contact Us</a></li>
+                        <li class="mx-2"><a class="text-white" href="#">About</a></li>
+                        <li class="mx-2"><a class="text-white" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <p class="fw-bold text-center">© 2022 Health BD</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <body>
+
+
+
+
+
+        <script src="js/jquery.min.js"></script>
+
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="https://kit.fontawesome.com/554419e89c.js" crossorigin="anonymous"></script>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/app.js"></script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,29 @@
+.about-banner-heading {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0px 200px 0px;
+    line-height: 1.8;
+}
+
+.about-us-image {
+	width: 100%;
+	margin-top: -200px;
+	border-radius: 2px;
+	width: 600px;
+}
+
+.about-us{
+    background: #F0EAF3;
+    padding: 10px;
+    text-align: justify;
+}
+
+.about-us-title {
+	color: #652B82;
+	font-size: 20px;
+	font-weight: bold;
+	
+	text-align: center;
+}

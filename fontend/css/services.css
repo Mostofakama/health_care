@@ -1,0 +1,27 @@
+
+.services-banner{
+    background: #652B82;
+}
+.services-banner img{
+   width: 100%;
+}
+.tab {
+	--underline-color: #004eff;
+	--underline-size: 3px;
+	color: inherit;
+	padding: 20px;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 1;
+	width: inherit;
+    cursor: pointer;
+}
+.tabs-wrapper {
+	width: 100%;
+	border-bottom: 2px solid #f7f7f7 !important;
+}
+.is-active {
+	color: #004eff !important;
+	font-weight: bold;
+    border-bottom:2px solid #004eff;
+}
