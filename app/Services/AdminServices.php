@@ -3,6 +3,10 @@
 namespace App\Services;
 
 use App\Models\Admin;
+use App\Models\Unions;
+use App\Models\District;
+use App\Models\Division;
+use App\Models\SubDistrict;
 use App\Services\AdminServices;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -12,7 +16,11 @@ use App\Http\Requests\Auth\LoginRequest;
 
 class AdminServices{
     public function AdminSignup(){
-        return view('admin.signup');
+        $division = Division::all();
+        $district = District::all();
+        $subdistrict = SubDistrict::all();
+        $unions = Unions::all();
+        return view('admin.signup',compact('division', 'district', 'subdistrict', 'unions'));
     }
 
     public function AdminSignupStore($request){
@@ -20,6 +28,10 @@ class AdminServices{
          'name' => $request->name,
          'email' => $request->email,
          'password' =>   $request->password,
+         'division_id' => 1,
+         'district_id' => 1,
+         'sub_district_id' => 1,
+         'union_id' => 1,
          'role' => $request->role,
        ]);
 

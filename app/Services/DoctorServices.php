@@ -84,28 +84,27 @@ class DoctorServices{
      */
     public function show( $id)
     {
-        $hospital = Hospital::with(['division', 'district', 'subdistrict'])->find($id);
+        $doctor = doctor::with(['division', 'district', 'subdistrict'])->find($id);
 
 
-        if (!$hospital) {
+        if (!$doctor) {
             return view('Error.AdminNotFound');
         }
 
 
-        return view('admin.SuperAdmin.Hospital.show', compact('hospital'));
+        return view('admin.SuperAdmin.doctor.show', compact('doctor'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit( $id)
+    public function edit($id)
     {
-        $diagnostic = Hospital::findOrFail($id);
+        $doctor = Doctor::findOrFail($id);
         $divisions = Division::all();
         $districts = District::all();
         $subdistricts = SubDistrict::all();
-
-        return view('admin.SuperAdmin.Hospital.update', compact('diagnostic', 'divisions', 'districts', 'subdistricts'));
+        return view('admin.SuperAdmin.doctor.update', compact('doctor', 'divisions', 'districts', 'subdistricts'));
     }
 
     /**

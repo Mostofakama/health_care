@@ -74,6 +74,9 @@ class DiagnosticHospitalServices{
             'type' => $request->type,
             'license_number' => $request->license_number,
             'photo' =>$fileName ?? null,
+            'address' => $request->address,
+            'type_hospital' => $request->type_hospital,
+
         ]);
 
         return redirect()->route('diagnostic.index');
@@ -140,6 +143,8 @@ class DiagnosticHospitalServices{
             'type' => $request->type,
             'license_number' => $request->license_number,
             'photo' => $fileName,
+            'address' => $request->address,
+            'type_hospital' => $request->type_hospital,
         ]);
 
         return redirect()->route('diagnostic.index');

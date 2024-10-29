@@ -31,6 +31,9 @@ class DiagnosticHospitalStoreRequest extends FormRequest
             'type' => 'nullable|string|in:Public,Private,Government',
             'license_number' => 'nullable|string|max:100',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'address' => 'nullable|string|max:255',
+            'type_hospital' => 'nullable|string',
+             'status' => 'integer',
             ];
     }
 }

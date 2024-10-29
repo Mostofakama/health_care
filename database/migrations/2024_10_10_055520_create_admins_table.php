@@ -16,7 +16,13 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('password_textPlain')->nullable();
             $table->integer('role')->default(3);
+            $table->foreignId('division_id');
+            $table->foreignId('district_id');
+            $table->foreignId('sub_district_id');
+            $table->foreignId('union_id');
+
             $table->timestamps();
         });
     }

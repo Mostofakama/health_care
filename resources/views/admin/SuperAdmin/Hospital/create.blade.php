@@ -99,6 +99,29 @@
                         </div>
 
                         <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" class="form-control" name="address" placeholder="Address"/>
+                            @error('address')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label></label>
+
+                            <div class="form-group">
+                                <label>Hospital Type</label>
+                                <select id="select-division" name="type_hospital" class="form-control w-100">
+                                    <option value="">Hospital Type</option>
+                                    <option value="eye">Eye</option>
+                                    <option value="dental">Dental</option>
+                                </select>
+                            </div>
+                            @error('type_hospital')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
                             <label>Photo</label>
                             <input type="file" class="form-control" name="photo" />
                             @error('photo')

@@ -131,8 +131,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Chamber Contact Number</label>
-                            <input type="text" class="form-control" name="chamber_1_contact_number" value="{{old('chamber_1_contact_number')}}" placeholder="Chamber Contact Number" />
+                            <label>Visiting Hour</label>
+                            <input type="text" class="form-control" name="chamber_1_contact_number" value="{{old('chamber_1_contact_number')}}" placeholder="Visiting Hour" />
                             @error('chamber_1_contact_number')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror

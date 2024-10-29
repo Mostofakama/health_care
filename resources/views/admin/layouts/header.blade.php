@@ -106,7 +106,7 @@
 									<a class="dropdown-item" href="javaScript:;">
 										<div class="media align-items-center">
 											<div class="user-online">
-												<img src="assets/images/avatars/avatar-3.png" class="msg-avatar" alt="user avatar">
+												<a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
 											</div>
 											<div class="media-body">
 												<h6 class="msg-name">Oscar Garner <span class="msg-time float-right">8 min
@@ -334,14 +334,18 @@
 								</a>
 							</div>
 						</li>
-						<li class="nav-item dropdown dropdown-user-profile">
-							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javaScript:;" data-toggle="dropdown">
+						<li class="nav-item dropdown dropdown-user-profile"  >
+
+                            <form action="{{ route('admin.logout') }}" method="POST"  style="display: inline;">
+                                @csrf
+                                <button class="btn btn-danger" type="submit">Logout</button>
+                            </form>
+							{{-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javaScript:;" data-toggle="dropdown">
 								<div class="media user-box align-items-center">
 									<div class="media-body user-info">
-										<p class="user-name mb-0">Jessica Doe</p>
-										<p class="designattion mb-0">Available</p>
+										<a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
 									</div>
-									<img src="assets/images/avatars/avatar-1.png" class="user-img" alt="user avatar">
+
 								</div>
 							</a>
 							<div class="dropdown-menu dropdown-menu-right">	<a class="dropdown-item" href="javaScript:;"><i
@@ -356,7 +360,7 @@
 										class="bx bx-cloud-download"></i><span>Downloads</span></a>
 								<div class="dropdown-divider mb-0"></div>	<a class="dropdown-item" href="javaScript:;"><i
 										class="bx bx-power-off"></i><span>Logout</span></a>
-							</div>
+							</div> --}}
 						</li>
 						<li class="nav-item dropdown dropdown-language">
 							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javaScript:;" data-toggle="dropdown">

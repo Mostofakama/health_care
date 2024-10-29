@@ -21,8 +21,10 @@ class Hospital extends Model
         'type',
         'license_number',
         'photo',
+        'address',
+        'type_hospital',
+        'status',
     ];
-
 
     public function division()
     {

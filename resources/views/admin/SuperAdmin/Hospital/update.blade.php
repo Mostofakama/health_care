@@ -103,7 +103,33 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" class="form-control" name="address" value="{{$diagnostic->address}}" placeholder="Address"/>
+                            @error('address')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
 
+                        <div class="form-group">
+
+                            <div class="form-group">
+                                <label></label>
+
+                                <div class="form-group">
+                                    <label>Hospital Type</label>
+                                    <select id="select-division" name="type_hospital" class="form-control w-100">
+                                        <option value="">Hospital Type</option>
+                                        <option value="eye" {{ $diagnostic->type_hospital == 'eye' ? 'selected' : '' }}>Eye</option>
+                                        <option value="dental" {{ $diagnostic->type_hospital == 'dental' ? 'selected' : '' }}>dental</option>
+                                    </select>
+                                </div>
+                                @error('type_hospital')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+
+                        </div>
                         <div class="form-group">
                             <label>Photo</label>
                             <input type="file" class="form-control" name="photo" />

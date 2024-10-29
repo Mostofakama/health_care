@@ -18,10 +18,40 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'visitor_name',
+        'father_name',
+        'birth_date',
+        'voter_id',
+        'mobile',
+        'profession',
+        'card_number',
+        'gender',
+        'division_id',
+        'district_id',
+        'sub_district_id',
+        'union_id',
     ];
+
+    // Relationships with other models
+    public function division()
+    {
+        return $this->belongsTo(Division::class);
+    }
+
+    public function district()
+    {
+        return $this->belongsTo(District::class);
+    }
+
+    public function subDistrict()
+    {
+        return $this->belongsTo(SubDistrict::class);
+    }
+
+    public function union()
+    {
+        return $this->belongsTo(Unions::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.

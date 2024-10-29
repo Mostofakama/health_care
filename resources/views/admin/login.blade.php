@@ -10,12 +10,13 @@
         /* login */
         .login_section {
             background-color: #082744;
-            margin-top: 80px;
+
             padding: 10px 0 50px;
+            height: 100vh;
         }
 
         #formsection {
-            height: 500px;
+
             width: 400px;
             margin: auto;
             margin-top: 50px;
@@ -87,14 +88,7 @@
                         </div>
 
                         <!-- Signup Link -->
-                        <div class="mb-3 mt-4">
-                            <p>Not yet a member? <a href="#">Sign Up Now</a></p>
-                        </div>
 
-                        <!-- Forgot Password Link -->
-                        <div class="forgotpassword">
-                            <a class="btn btn-primary" href="#">Lost your password?</a>
-                        </div>
                     </form>
                 </div>
             </section>

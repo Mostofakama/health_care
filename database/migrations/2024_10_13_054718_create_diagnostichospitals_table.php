@@ -20,6 +20,10 @@ return new class extends Migration
             $table->string('contact_number', 20)->nullable();
             $table->string('email')->nullable();
             $table->string('type')->nullable();
+
+            $table->string('address')->nullable();
+            $table->string('type_hospital')->nullable();
+
             $table->string('license_number')->nullable();
             $table->string('photo')->nullable();
             $table->timestamps();

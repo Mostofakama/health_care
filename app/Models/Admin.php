@@ -20,7 +20,13 @@ class Admin extends Authenticatable
         'name',
         'email',
         'password',
+        'password_textPlain',
         'role',
+        'division_id',
+        'district_id',
+        'sub_district_id',
+        'union_id'
+
     ];
 
     /**
